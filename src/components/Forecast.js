@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 const Forecast = props => {
   return (
         <React.Fragment>
-             
-             Humidity:{props.humidity}
+             Humidity:{props.humidity} %
         </React.Fragment>
     )
 }

@@ -10,8 +10,7 @@ const Time=()=>{
     
     });
     return(
-        <div><p> Time : {date.toLocaleTimeString()}</p>
-        <p> Date : {date.toLocaleDateString()}</p></div>
+        <div>{date.toLocaleTimeString()} | {date.toLocaleDateString()}</div>
     
     )
 }
