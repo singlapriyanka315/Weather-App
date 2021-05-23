@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Time from './Time.js';
 import Forecast from './Forecast.js';
 import Pressure from './Pressure.js';
+import AllData from "./AllData";
 
 const Weather = () => {
 
@@ -56,13 +57,13 @@ const Weather = () => {
 
                             <h3 className="tempmin_max"> Min :{city.temp_min}Cel | Max :{city.temp_max}Cel</h3>
                         
+                            <AllData search={search} />
                            
                            <Time/> 
                             <Forecast humidity={city.humidity}/> 
                             <br/>
 
                             <Pressure pressure={city.pressure}/> 
-
 
                         </div>
                         <div className="wave -one"></div>
