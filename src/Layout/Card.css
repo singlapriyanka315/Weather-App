@@ -1,0 +1,27 @@
+.box{
+    width: 30vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #d8a5dd;
+    align-items: flex-start;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.cards{
+    padding-left: 5rem ;
+    padding-top: 4rem;
+    font-weight: 1000;
+    font-size: 40px;
+    border: 2px;
+    
+}
+.cardleft{
+    padding-right: 5rem;
+    padding-top: 4rem;
+    font-weight: 1000;
+    font-size: 40px;
+    
+}
