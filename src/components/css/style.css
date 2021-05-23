@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     font-family: "Jost", sans-serif;
 }
 
@@ -12,8 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     font-family: "Jost", sans-serif;
 }
 
@@ -27,14 +27,15 @@ html {
 }
 
 .box {
-    width: 30vw;
-    height: 60vh;
+    width: 40vw;
+    height: 100vh;
     border-radius: 0.5rem;
     box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
     background: #d8a5dd;
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
+    align-items: center;
     min-width: 20rem;
     min-height: 35rem;
 }
@@ -99,11 +100,10 @@ html {
 }
 
 .location {
-    
-    margin-top: 6.5rem;
+    /* margin-top: 4.5rem; */
     text-align: center;
-    font-weight: 800;
-    font-size: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
     text-transform: capitalize;
 }
 
@@ -130,9 +130,8 @@ html {
 }
 
 .temp {
-    margin-top: 2.5rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 .tempmin_max {
@@ -204,7 +203,7 @@ body > span {
 
 .inputData {
     width: 100%;
-    height: 8vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;

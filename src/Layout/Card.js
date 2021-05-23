@@ -3,8 +3,8 @@ import './Card.css';
 const Card= props=>{
     return(
        <div className="cards">
-      <Card1 title="Humidity" value="bhdcj"/>
-      <Card1 title="Pressure" value="nxsdcbjs"/>
+      <Card1 title="Humidity" value={props.humidity}/>
+      <Card1 title="Pressure" value={props.pressure}/>
       
       </div>
 

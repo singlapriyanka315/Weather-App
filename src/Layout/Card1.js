@@ -6,7 +6,6 @@ const Card1= props=>{
         <div class="card-header">{props.title}</div>
         <div class="card-body">
           <h5 class="card-title">{props.value}</h5>
-          
         </div>
       </div>
      )

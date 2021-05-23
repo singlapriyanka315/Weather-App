@@ -6,8 +6,6 @@ const Card= props=>{
       <Card1 title="Clear" value="374ir4i3u"/>
       <Card1 title="Clear" value="374ir4i3u"/>
       </div>
-
-      
     )
 }
 export default Card;

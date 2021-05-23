@@ -7,12 +7,12 @@ import Card from "./Layout/Card";
 import Cardleft from "./Layout/Cardleft";
 
 function App() {
+  
   return (
     <div className="rowC">
-      <span><Cardleft/></span>
+      {/* <span><Cardleft/></span> */}
     <span><Weather/></span> 
-     
-    <span><Card/></span>
+    {/* <span><Card /></span> */}
      </div>
    
      );

@@ -1,7 +1,9 @@
 import React , {useEffect,useState} from 'react';
+import Weather from './Weather';
 
 const AllData =  props => {
     const [city, setCity] = useState(null);
+    const [search, setSearch] = useState("Mumbai");
     function sun(pro){
         const hours=new Date(city.sys[pro]*1000).getHours();
         const minutes=new Date(city.sys['sunrise']*1000).getMinutes();
@@ -11,20 +13,22 @@ const AllData =  props => {
         }
         return str;
     }
-   const search=props.search;
+    function searchHandler(data) {
+        setSearch(data);
+    }
+//    const search=props.search;
     useEffect(() => {
         const fetchApi = async () => {
             const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=110f2b9ec97d037c60903a1418abba54`
             const response = await fetch(url);
             const resJson = await response.json();
             setCity(resJson);
-            console.log(resJson);
-            console.log(resJson.weather);
         };
         fetchApi();
     }, [search]);
     return (
         <React.Fragment>
+            <Weather search={search} searchHandler={(data) => searchHandler(data)} city={city} />
             <h2>{(city!==null) ? city.weather.map((desc) => {
                 return desc.main
             }) : null}</h2><br></br>
